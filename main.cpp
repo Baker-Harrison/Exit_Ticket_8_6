@@ -12,8 +12,8 @@ int main() {
 	auto integer = cube_it(5);
 	auto doubles = cube_it(5.55);
 
-	cout << integer << endl;
-	cout << doubles << endl;
+	cout << "Int Type: " << integer << endl;
+	cout << "Double Type: " << doubles << endl;
 
 
 	NumEater<int> eater1;
@@ -22,8 +22,8 @@ int main() {
 	double numList[5] = {5.9, 8.9, 3.4, 9.9, 5.6};
 
 	for (auto &num : numList) {
-		eater1.eat(num);
-		eater2.eat(num);
+		cout << "Eater1: "; eater1.eat(num);
+		cout << "Eater2: ";eater2.eat(num);
 		cout << endl;
 	}
 
